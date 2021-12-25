@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Retangle from "./components/Retangle"
+import Sidebar from "./components/Sidebar"
 
 function App() {
+  const [color,setColor] = useState(["gray", "gray", "gray", "gray", "gray"]);
+  const [open,setOpen] = useState(4)
+  const [all,setAll] = useState(12)
+  const [closed,setClosed] = useState(8)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Sidebar open={open} all={all} closed={closed}></Sidebar>
+     <Retangle color={color} setColor={setColor} /> 
     </div>
   );
 }

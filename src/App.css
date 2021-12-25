@@ -1,16 +1,136 @@
 .App {
   text-align: center;
+  display:flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.github-elements{
+  border: 1px solid gray;
+  min-width: 485px;
+  min-height: 40px;
+  background-color:#f6f6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  display: flex;
+  gap: 19px;
+  color:white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+li:hover {
+  background-color: #292a48;
+  color:white;
+  height: 43px;
+  width: 134px;
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.circle-red {
+  min-width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100px;
+}
+
+.circle-yellow {
+  min-width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 100px;
+}
+
+.circle-green {
+  min-width: 10px;
+  height: 10px;
+  background-color:green;
+  border-radius: 100px;
+}
+
+.sidebar {
+  max-width: 152px;
+  min-height: 633px;
+  background-color: #101022;
+}
+
+.github-element {
+  padding-left: 10px;
+  max-width: 463px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.github-content{
+  display: flex;
+}
+
+
+.date{
+  font-size: 10px;
+  color:gray;
+  padding-right: 414px;
+}
+
+.fa-star:before {
+  content: "\f005";
+  padding-right: 9px;
+}
+
+.github-box{
+  display:flex;
+}
+
+.github-item {
+  background-color: white;
+  text-align: left;
+  padding-left: 11px;
+  box-shadow: 1px 1px 3px grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github-retangle{
+  padding-right: 3px;
+  gap: 23px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-middle{
+  display: flex;
+  justify-content: space-between;
+}
+
+span{
+  color: gray;
+  padding-left: 26px;
+}
+
+
+.box{
+  background-color: #f6f6f6;
+}
+
+.bar {
+  display: flex;
+  min-height: 24px;
+  justify-content: flex-start;
+  grid-gap: 7px;
+  gap: 7px;
+  min-width: 134px;
+  padding-top: 16px;
+  padding-left: 16px;
 }
 
 .App-header {
@@ -24,15 +144,4 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
